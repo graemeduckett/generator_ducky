@@ -1,0 +1,291 @@
+article footer {
+  font-size: 0.9em;
+  color: #888;
+}
+
+p {
+  margin: 0 0 1em;
+  padding: 0;
+}
+p.intro {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+ol,
+ul,
+dl {
+  margin: 0 0 1em 0;
+  padding: 0 2em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+address {
+  margin-bottom: 1em;
+}
+address strong {
+  font-style: normal;
+}
+address abbr {
+  border: none;
+}
+
+.alert {
+  padding: 0.75em 35px 0.75em 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.alert .close {
+  cursor: pointer;
+  color: #444;
+  text-decoration: none;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+.alert .close span {
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  text-indent: -999em;
+}
+.alert .close:hover {
+  opacity: 0.5;
+}
+.alert .close:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.alert .close::after {
+  content: "\00D7";
+  font-size: 18px;
+  line-height: 18px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.alert p:last-of-type {
+  margin-bottom: 0;
+}
+.alert.error {
+  background: $alert-error-colour;
+}
+.alert.warning {
+  background: $alert-warning-colour;
+}
+.alert.notice {
+  background: $alert-notice-colour;
+}
+.alert.success {
+  background: $alert-success-colour;
+}
+
+.no-js .alert {
+  display: none;
+}
+
+.pagination {
+  height: 2em;
+  color: #888;
+  font-size: 0.9em;
+  cursor: default;
+  margin: 1.5em 0;
+  padding: 0;
+}
+.pagination li {
+  display: block;
+  float: left;
+  margin: 0 0 0 0.35em;
+}
+.pagination .current,
+.pagination .current a:hover,
+.pagination .current a:focus {
+  color: #fff;
+  background: #222;
+}
+.pagination a {
+  display: block;
+  padding: 0.1em 0.6em;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.pagination a:hover, .pagination a:focus {
+  background: #eee;
+}
+
+.breadcrumb {
+  margin-left: -0.5em;
+  margin-bottom: 1em;
+}
+.breadcrumb a {
+  text-decoration: none;
+  opacity: 0.5;
+  padding: 0.3em 0.5em;
+}
+.breadcrumb a.current {
+  opacity: 1;
+}
+.breadcrumb a:hover, .breadcrumb a:focus {
+  opacity: 1;
+  color: #000;
+}
+.breadcrumb ul {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb li {
+  margin-right: 0.25em;
+  list-style: none;
+  display: inline;
+}
+.breadcrumb li.current a {
+  opacity: 1;
+}
+
+form fieldset {
+  margin: 0 0 0.75em 0;
+  padding: 0 0 0.75em 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+form label {
+  width: auto;
+  margin: 0 0 0.3em 0;
+  padding: 0 0.5em 0 0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 51.25em) {
+  form label {
+    float: left;
+    width: 25%;
+    margin-top: 0.25em;
+  }
+}
+@media screen and (min-width: 51.25em) {
+  form .no-label {
+    padding-left: 25%;
+  }
+}
+form .no-label label {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: normal;
+  font-size: inherit;
+}
+form .form-help {
+  font-size: 0.8em;
+  color: #999;
+}
+@media screen and (min-width: 51.25em) {
+  form .form-help {
+    padding: 0 0 0 25%;
+  }
+}
+form .check ul,
+form .check ol,
+form .radio ul,
+form .radio ol {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 51.25em) {
+  form .check ul,
+  form .check ol,
+  form .radio ul,
+  form .radio ol {
+    padding-left: 25%;
+  }
+}
+form .check li,
+form .radio li {
+  list-style: none;
+  margin: 0 0 0.3em 0;
+}
+form .check li:last-of-type,
+form .radio li:last-of-type {
+  margin-bottom: 0;
+}
+form .check li label,
+form .radio li label {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: normal;
+  font-size: inherit;
+}
+form .check input,
+form .radio input {
+  margin: 5px;
+}
+form select {
+  margin: 0;
+  min-width: 30%;
+}
+form .form-actions {
+  margin: 0;
+  padding: none;
+  border: none;
+}
+@media screen and (min-width: 51.25em) {
+  form .form-actions {
+    margin-left: 25%;
+  }
+}
+form input[type=text],
+form input[type=search],
+form input[type=email],
+form .form-text,
+form textarea {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  padding: 0.5em;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+@media screen and (min-width: 51.25em) {
+  form input[type=text],
+  form input[type=search],
+  form input[type=email],
+  form .form-text,
+  form textarea {
+    width: 75%;
+  }
+}
+form input[type=text]:focus,
+form input[type=search]:focus,
+form input[type=email]:focus,
+form .form-text:focus,
+form textarea:focus {
+  border-color: #ccc;
+  background: #fff;
+}
+form textarea {
+  min-height: 150px;
+}
+form .validation-error input[type=text],
+form .validation-error input[type=search],
+form .validation-error input[type=email],
+form .validation-error .form-text,
+form .validation-error textarea {
+  border-color: #f75e45;
+}
+form .validation-error textarea {
+  min-height: 150px;
+}
+form .validation-error .error-text {
+  color: #f75e45;
+}

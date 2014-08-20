@@ -1,0 +1,73 @@
+// bower:scss
+// endbower
+@import 'compass';
+
+//
+// GLOBAL VARIABLES
+//
+
+$base-font-size: 16px;
+
+// Buttons
+$btn-primary-colour: #ccc;
+$btn-primary-border-colour: #ccc;
+$btn-primary-text-colour: #000;
+$btn-secondary-colour: #ccc;
+$btn-secondary-border-colour: #ccc;
+$btn-secondary-text-colour: #000;
+
+// Notification colours
+$alert-error-colour: #f29494;
+$alert-warning-colour: #f2d294;
+$alert-notice-colour: #94ecf2;
+$alert-success-colour: #9bf294;
+
+//
+// GRID (Foundation grid http://foundation.zurb.com/docs/)
+//
+
+// Grid Variables
+$row-width:     1300px !default;
+$column-gutter: 45px !default;
+$total-columns: 12 !default;
+
+// Media Queries
+$xsmall-screen: 480px !default;
+$small-screen: 768px !default;
+$medium-screen: 1080px !default;
+$large-screen: 1340px !default;
+$xlarge-screen: 1640px !default;
+$xxlarge-screen: 1800px !default;
+$mobile-nav-max: 800px !default;
+
+$screen: "only screen" !default;
+$xsmall: "only screen and (min-width:#{$xsmall-screen})" !default;
+$small: "only screen and (min-width: #{$small-screen})" !default;
+$medium: "only screen and (min-width:#{$medium-screen})" !default;
+$large: "only screen and (min-width:#{$large-screen})" !default;
+$xlarge: "only screen and (min-width:#{$xlarge-screen})" !default;
+$xxlarge: "only screen and (min-width:#{$xxlarge-screen})" !default;
+$landscape: "only screen and (orientation: landscape)" !default;
+$portrait: "only screen and (orientation: portrait)" !default;
+$menuswap: "only screen and (max-width:#{$mobile-nav-max})" !default;
+$menuswap-min: "only screen and (min-width:#{$mobile-nav-max+1})" !default;
+
+$em-base: $base-font-size !default;
+
+// Include classes for use directly in page markup
+$include-html-grid-classes: true !default;
+
+// We use these to control text direction settings
+$text-direction: ltr !default;
+
+
+
+// YELLOW PENCIL GLOBAL STYLES
+@import 'yp/global';
+@import 'yp/grid';
+
+// THEME PARTIALS
+@import 'helpers';
+@import 'base';
+@import 'layout';
+@import 'modules';
